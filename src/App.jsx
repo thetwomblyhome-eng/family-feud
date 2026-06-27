@@ -7,7 +7,6 @@ import { getFirestore, doc, setDoc, onSnapshot, updateDoc, getDoc } from "fireba
 // Get this from Firebase Console → Project Settings → Your Apps → Web app
 // ─────────────────────────────────────────────────────────────────────────────
 const firebaseConfig = {
-  apiKey:
   apiKey: "AIzaSyB1hpkXvEQhcDHW7eM4Bw7PSUcRzxQjZIk",
   authDomain: "family-feud-70191.firebaseapp.com",
   projectId: "family-feud-70191",
