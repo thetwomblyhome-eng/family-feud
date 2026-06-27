@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import QRCode from "https://esm.sh/qrcode.react@3.1.0";
 import { initializeApp } from "firebase/app";
 import { getFirestore, doc, setDoc, onSnapshot, updateDoc, getDoc } from "firebase/firestore";
 
@@ -208,10 +207,7 @@ function HostView() {
       <div style={S.title}>Waiting Room</div>
       <div style={S.sub}>Share this code — players enter it on their phones</div>
       <div style={S.codeDisplay}>{gameCode}</div>
-     <div style={{ display: "flex", justifyContent: "center", marginBottom: "16px" }}>
-  <QRCode value="https://family-feud-rho.vercel.app" size={180} bgColor="#07071a" fgColor="#f5c518" />
-</div>
-<div style={{ ...S.sub, marginBottom: "16px" }}>Players scan the QR code or visit the URL and enter the game code</div>
+    <div style={{ ...S.sub, marginBottom: "16px" }}>Players visit this same URL → tap "Join as Player" → enter code</div>
       <div style={S.card}>
         <div style={S.label}>Teams</div>
         {teams.map((t, i) => (
